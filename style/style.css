@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #282538;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 23px;
+}
+/*navbar */
+
+.max_width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  margin-top: 25px;
+  width: 100%;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s;
+}
+
+.navbar .max_width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.navbar .logo a {
+  color: #fff;
+  background: transparent;
+}
+
+.navbar .logo h1 {
+  transition: color 0.3s ease;
+}
+
+.navbar .logo h1:hover {
+  color: #ffd233;
+}
+
+.navbar .logo h1 {
+  font-weight: 200;
+}
+
+.navbar .logo span {
+  font-weight: 600;
+  padding-left: 1px;
+}
+
+.navbar .menu {
+  background: transparent;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  background: transparent;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 23px;
+  margin-left: 25px;
+  transition: color 0.4s ease;
+  background: transparent;
+}
+
+.navbar .menu li a:hover {
+  color: #ffd233;
+}
+
+#profileImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#profileImageContainer > img {
+  max-width: 390px;
+  max-height: 390px;
+  min-width: 390px;
+  min-height: 390px;
+  margin-top: 255px;
+  border-radius: 100%;
+  border: 6px solid #7428b0;
+  transition: 0.5s;
+}
+
+#profileImageContainer > img:hover {
+  border: 6px solid #ffd233;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 40px;
+}
+#sobrenome {
+  color: #fff;
+  transition: 0.5s;
+}
+#sobrenome:hover {
+  color: #ffd233;
+}
