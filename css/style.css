@@ -147,10 +147,9 @@ body {
 }
 
 .home-sci {
-    position: absolute;
+    margin-top: 80px;
     bottom: 40px;
     width: 170px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
