@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #8d7b686a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,6 +150,7 @@ body {
     position: absolute;
     bottom: 40px;
     width: 170px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -189,4 +190,21 @@ body {
 
 .home-sci a:hover:before {
     width: 100%;
+}
+
+.portifolio {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.portifolio-content {
+    max-width: 600px;
+}
+
+.portifolio-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
 }
