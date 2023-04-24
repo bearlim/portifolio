@@ -6,18 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuri Lucena - Portifolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="icon" href="/imgs/codeIcon.png" type="image/x-icon"> -->
     <link rel="shortcut icon" type="image/x-icon" href="/imgs/codeIcon.ico">
 </head>
 
 <body>
+    <script src="./js/script.js"></script>
+
     <header class="header">
         <a href="" class="logo"><i class='bx bx-code-block'></i></i></a>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle" onclick="darkModeAction()">
+                <span class="slider round"></span>
+            </label>
+            <a href="#home" class="active">Home</a>
             <!-- <a href="#">About</a> -->
             <a href="#portifolio">Portifolio</a>
             <a href="#">Technologies</a>
@@ -25,43 +31,60 @@
         </nav>
     </header>
 
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hello! I'm Yuri</h1>
-            <h3>Full Stack Developer</h3>
-            <p>Experienced software developer with expertise in C# and a strong
-                background in Blazor, ASP.NET, .NET, and React. I have worked with SQL
-                Server, PostgreSql, Oracle and PL/SQL databases.<br /><br />
-                I am passionate about developing high-quality software that meets
-                customer needs and exceeds expectations. <br />My experience includes
-                developing web applications using Blazor and ASP.NET, data migrations,
-                as well as mobile applications using Flutter and React. <br />I am
-                always looking for new challenges and opportunities to learn and grow as
-                a developer.</p>
+    <section class="content">
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Hello! I'm Yuri</h1>
+                <h3>Full Stack Developer</h3>
+                <p>Experienced software developer with expertise in C# and a strong
+                    background in Blazor, ASP.NET, .NET, and React. I have worked with SQL
+                    Server, PostgreSql, Oracle and PL/SQL databases.<br /><br />
+                    I am passionate about developing high-quality software that meets
+                    customer needs and exceeds expectations. <br />My experience includes
+                    developing web applications using Blazor and ASP.NET, data migrations,
+                    as well as mobile applications using Flutter and React. <br />I am
+                    always looking for new challenges and opportunities to learn and grow as
+                    a developer.</p>
 
-            <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
+                <div class="btn-box">
+                    <a href="#">Hire Me</a>
+                    <a href="#">Let's Talk</a>
+                </div>
+                <div class="home-sci">
+                    <a href="https://github.com/bearlim" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/yurilino/en" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.youtube.com/@yurizineos" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
             </div>
-            <div class="home-sci">
-                <a href="https://github.com/bearlim" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/yurilino/en" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.youtube.com/@yurizineos" target="_blank"><i class='bx bxl-youtube'></i></a>
+
+            <div class="home-art">
+                <img src="./imgs/laptopart.gif" alt="Laptop Art" id="art-img">
             </div>
-        </div>
-
-        <div class="home-art">
-            <img src="./imgs/laptopart.gif" alt="Laptop Art">
-        </div>
 
 
+        </section>
+
+        <section id="portifolio" class="portifolio">
+
+            <div class="portifolio-content">
+                <h1>Portifolio</h1>
+
+                <div class="portifolio-box">
+                    <img src="" alt="">
+                    <div class="portfolio-layer">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </section>
 
-    <!-- <section id="portifolio" class="portifolio">
-        <div class="portifolio-content">
-            <h1>Portifolio</h1>
-        </div>
-    </section> -->
+    <script>
+
+    </script>
 </body>
 
 </html>
