@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
 :root {
   --sixty-color-white-mode: #8d7b68;
   --thirty-color-white-mode: #a4907c;
@@ -20,9 +21,10 @@
 body {
   background-color: var(--sixty-color-white-mode);
   color: #ededed;
-}
-body.dark-mode {
-  background: var(--sixty-color-dark-mode);
+
+  &.dark-mode {
+    background: var(--sixty-color-dark-mode);
+  }
 }
 
 .header {
@@ -36,9 +38,10 @@ body.dark-mode {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-}
-.dark-mode .header {
-  background: var(--navbar-background-dark-mode);
+
+  .dark-mode & {
+    background: var(--navbar-background-dark-mode);
+  }
 }
 
 .logo {
@@ -68,10 +71,10 @@ body.dark-mode {
 .navbar a:hover,
 .navbar a.active {
   color: var(--ten-color-white-mode);
-}
-.dark-mode .navbar a:hover,
-.dark-mode .navbar a.active {
-  color: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--ten-color-dark-mode);
+  }
 }
 
 .home {
@@ -95,9 +98,10 @@ body.dark-mode {
   font-size: 32px;
   font-weight: 700;
   color: var(--ten-color-white-mode);
-}
-.dark-mode .home-content h3 {
-  color: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--ten-color-dark-mode);
+  }
 }
 
 .home-content p {
@@ -138,40 +142,45 @@ body.dark-mode {
   letter-spacing: 1px;
   z-index: 1;
   overflow: hidden;
-}
-.dark-mode .btn-box a {
-  background: var(--ten-color-dark-mode);
-  border: 2px solid var(--ten-color-dark-mode);
-  color: var(--sixty-color-dark-mode);
+
+  .dark-mode & {
+    background: var(--ten-color-dark-mode);
+    border: 2px solid var(--ten-color-dark-mode);
+    color: var(--sixty-color-dark-mode);
+  }
 }
 
 .btn-box a:nth-child(2) {
   background: transparent;
   color: var(--ten-color-white-mode);
-}
-.dark-mode .btn-box a:nth-child(2) {
-  color: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--ten-color-dark-mode);
+  }
 }
 
 .btn-box a:nth-child(1):hover {
   color: var(--ten-color-white-mode);
-}
-.dark-mode .btn-box a:nth-child(1):hover {
-  color: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--ten-color-dark-mode);
+  }
 }
 
 .btn-box a:nth-child(2):hover {
   color: var(--sixty-color-white-mode);
-}
-.dark-mode .btn-box a:nth-child(2):hover {
-  color: var(--sixty-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--sixty-color-dark-mode);
+  }
 }
 
 .btn-box a:nth-child(2)::before {
   background-color: var(--ten-color-white-mode);
-}
-.dark-mode .btn-box a:nth-child(2)::before {
-  background-color: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    background-color: var(--ten-color-dark-mode);
+  }
 }
 
 .btn-box a::before {
@@ -184,9 +193,10 @@ body.dark-mode {
   height: 100%;
   z-index: -1;
   transition: 0.5s;
-}
-.dark-mode .btn-box a::before {
-  background: var(--sixty-color-dark-mode);
+
+  .dark-mode & {
+    background: var(--sixty-color-dark-mode);
+  }
 }
 
 .btn-box a:hover:before {
@@ -216,17 +226,19 @@ body.dark-mode {
   text-decoration: none;
   z-index: 1;
   overflow: hidden;
-}
-.dark-mode .home-sci a {
-  border: 2px solid var(--ten-color-dark-mode);
-  color: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    border: 2px solid var(--ten-color-dark-mode);
+    color: var(--ten-color-dark-mode);
+  }
 }
 
 .home-sci a:hover {
   color: var(--sixty-color-white-mode);
-}
-.dark-mode .home-sci a:hover {
-  color: var(--sixty-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--sixty-color-dark-mode);
+  }
 }
 
 .home-sci a::before {
@@ -239,9 +251,10 @@ body.dark-mode {
   background: var(--ten-color-white-mode);
   z-index: -1;
   transition: 0.5s;
-}
-.dark-mode .home-sci a::before {
-  background: var(--ten-color-dark-mode);
+
+  .dark-mode & {
+    background: var(--ten-color-dark-mode);
+  }
 }
 
 .home-sci a:hover:before {
@@ -269,6 +282,7 @@ body.dark-mode {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -281,6 +295,7 @@ body.dark-mode {
   left: 4px;
   bottom: 2px;
   background-color: white;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
 }
@@ -290,6 +305,8 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
   transform: translateX(22px);
 }
 
@@ -350,9 +367,10 @@ input:checked + .slider:before {
   border-color: var(--thirty-color-dark-mode);
   overflow: hidden;
   display: flex;
-}
-.dark-mode .portifolio-content .portifolio-box {
-  border-color: var(--thirty-color-white-mode);
+
+  .dark-mode & {
+    border-color: var(--thirty-color-white-mode);
+  }
 }
 
 .portifolio-box img {
@@ -372,7 +390,7 @@ input:checked + .slider:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(141, 123, 104, 0.3333333333), var(--sixty-color-white-mode));
+  background: linear-gradient(#8d7b6855, var(--sixty-color-white-mode));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,9 +398,10 @@ input:checked + .slider:before {
   padding: 0 2rem;
   transform: translateY(100%);
   transition: 0.5s ease;
-}
-.dark-mode .portifolio-box .portfolio-layer {
-  background: linear-gradient(rgba(165, 215, 232, 0.4196078431), var(--ten-color-dark-mode));
+
+  .dark-mode & {
+    background: linear-gradient(#a5d7e86b, var(--ten-color-dark-mode));
+  }
 }
 
 .portifolio-box:hover .portfolio-layer {
@@ -394,19 +413,21 @@ input:checked + .slider:before {
   font-size: 3rem;
   text-align: center;
   color: #ededed;
-}
-.dark-mode .portfolio-layer h4 {
-  color: var(--sixty-color-dark-mode);
+
+  .dark-mode & {
+    color: var(--sixty-color-dark-mode);
+  }
 }
 
 .portfolio-layer p {
   font-size: 1.2rem;
   margin: 2rem 0 1rem;
   color: #ededed;
+
+  .dark-mode & {
+    color: var(--sixty-color-dark-mode);
+  }
   text-align: center;
-}
-.dark-mode .portfolio-layer p {
-  color: var(--sixty-color-dark-mode);
 }
 
 .portfolio-layer a {
@@ -423,7 +444,8 @@ input:checked + .slider:before {
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--thirty-color-white-mode);
+
+  .dark-mode & {
+    color: var(--thirty-color-dark-mode);
+  }
 }
-.dark-mode .portfolio-layer a i {
-  color: var(--thirty-color-dark-mode);
-}/*# sourceMappingURL=style.css.map */
