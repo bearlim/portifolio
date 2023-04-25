@@ -46,11 +46,11 @@ function darkModeAction() {
 
   if (darkModeOn) {
     body.classList.remove("dark-mode");
-    img.src = "../imgs/laptopart.gif";
+    img.src = "imgs/laptopart.gif";
     document.cookie = "darkMode=false";
   } else {
     body.classList.add("dark-mode");
-    img.src = "../imgs/laptopart_darkmode.gif";
+    img.src = "imgs/laptopart_darkmode.gif";
     document.cookie = "darkMode=true";
   }
 }
@@ -61,11 +61,11 @@ function darkModeIsOn() {
 
   if (darkModeOn) {
     body.classList.add("dark-mode");
-    img.src = "../imgs/laptopart_darkmode.gif";
+    img.src = "imgs/laptopart_darkmode.gif";
     buttom.checked = true;
   } else {
     body.classList.remove("dark-mode");
-    img.src = "../imgs/laptopart.gif";
+    img.src = "imgs/laptopart.gif";
     buttom.checked = false;
   }
 }
