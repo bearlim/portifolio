@@ -56,13 +56,16 @@ function darkModeAction() {
 }
 
 function darkModeIsOn() {
+  let img = document.getElementById("art-img");
   let buttom = document.getElementById("dark-mode-toggle");
 
   if (darkModeOn) {
     body.classList.add("dark-mode");
+    img.src = "imgs/laptopart_darkmode.gif";
     buttom.checked = true;
   } else {
     body.classList.remove("dark-mode");
+    img.src = "imgs/laptopart.gif";
     buttom.checked = false;
   }
 }

@@ -125,14 +125,6 @@ body {
   margin-bottom: 100px;
 }
 
-#art-img {
-  content: url("imgs/laptopart.gif");
-
-  .dark-mode & {
-    content: url("imgs/laptopart_darkmode.gif");
-  }
-}
-
 .btn-box a {
   position: relative;
   display: inline-flex;
