@@ -126,10 +126,10 @@ body {
 }
 
 #art-img {
-  content: url("/imgs/laptopart.gif");
+  content: url("imgs/laptopart.gif");
 
   .dark-mode & {
-    content: url("/imgs/laptopart_darkmode.gif");
+    content: url("imgs/laptopart_darkmode.gif");
   }
 }
 
