@@ -121,6 +121,13 @@ body.dark-mode {
   margin-bottom: 100px;
 }
 
+#art-img {
+  content: url("/imgs/laptopart.gif");
+}
+.dark-mode #art-img {
+  content: url("/imgs/laptopart_darkmode.gif");
+}
+
 .btn-box a {
   position: relative;
   display: inline-flex;
@@ -323,7 +330,7 @@ input:checked + .slider:before {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .portifolio-content {
@@ -334,96 +341,35 @@ input:checked + .slider:before {
   max-width: 100%;
 }
 
-.portifolio-content a {
-  text-decoration: none;
-}
-
-.portifolio .portifolio-content {
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .portifolio-content .portifolio-box {
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 0.5rem;
-  border-color: var(--thirty-color-dark-mode);
-  overflow: hidden;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--thirty-color-white-mode);
+  border: 2px solid var(--thirty-color-white-mode);
+  padding: 5%;
+  border-radius: 15px;
+  width: 800px;
+  max-width: 800px;
 }
 .dark-mode .portifolio-content .portifolio-box {
-  border-color: var(--thirty-color-white-mode);
+  background: var(--thirty-color-dark-mode);
+  border: 2px solid var(--thirty-color-dark-mode);
 }
 
-.portifolio-box img {
+.portifolio-layer p {
+  text-align: justify;
+}
+
+.portifolio-box .portifolio-image img {
   width: 100%;
-  height: 300px;
-  transition: 0.5s ease;
+  align-self: flex-end;
+  border-radius: 15px;
 }
 
-.portifolio-box:hover img {
-  transform: scale(1.1);
-  transition: 0.5s ease;
-}
-
-.portifolio-box .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(141, 123, 104, 0.3333333333), var(--sixty-color-white-mode));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 2rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
-}
-.dark-mode .portifolio-box .portfolio-layer {
-  background: linear-gradient(rgba(165, 215, 232, 0.4196078431), var(--ten-color-dark-mode));
-}
-
-.portifolio-box:hover .portfolio-layer {
-  transform: translateY(0);
-  transition: 0.5s ease;
-}
-
-.portfolio-layer h4 {
-  font-size: 3rem;
-  text-align: center;
-  color: #ededed;
-}
-.dark-mode .portfolio-layer h4 {
-  color: var(--sixty-color-dark-mode);
-}
-
-.portfolio-layer p {
-  font-size: 1.2rem;
-  margin: 2rem 0 1rem;
-  color: #ededed;
-  text-align: center;
-}
-.dark-mode .portfolio-layer p {
-  color: var(--sixty-color-dark-mode);
-}
-
-.portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: #ededed;
-  border-radius: 50%;
-  text-decoration: none;
-}
-
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--thirty-color-white-mode);
-}
-.dark-mode .portfolio-layer a i {
-  color: var(--thirty-color-dark-mode);
+.portifolio-box .portifolio-technologies {
+  display: grid;
+  grid-column: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
