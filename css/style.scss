@@ -81,7 +81,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 10.15%;
 }
 
 .home-content {
@@ -329,10 +329,7 @@ input:checked + .slider:before {
 .portifolio {
   height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-content: flex-start;
-  padding: 0 10%;
+  padding: 0 10.15%;
   flex-wrap: wrap;
 }
 
@@ -340,48 +337,100 @@ input:checked + .slider:before {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 80px;
+  // margin-bottom: 50px;
+  width: 100%;
+  height: 0px;
 }
 
 .portifolio-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 2.5rem;
-  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 90px;
+  max-height: 300px;
 }
 
 .portifolio-content .portifolio-box {
   display: flex;
-  align-items: center;
-  // justify-content: center;
-  flex-wrap: wrap;
-  background: var(--thirty-color-white-mode);
-  border: 2px solid var(--thirty-color-white-mode);
-  padding: 5%;
-  border-radius: 15px;
-  width: 800px;
-  max-width: 800px;
+  justify-content: space-between;
+  width: 600px;
+  // max-width: 900px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--thirty-color-white-mode);
+  flex-direction: column;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.264);
 
   .dark-mode & {
-    background: var(--thirty-color-dark-mode);
-    border: 2px solid var(--thirty-color-dark-mode);
+    background-color: var(--thirty-color-dark-mode);
   }
 }
 
-.portifolio-layer p {
+.portifolio-box h3 {
+  font-size: 27px;
+  margin-bottom: 15px;
+  color: var(--ten-color-white-mode);
+
+  .dark-mode & {
+    color: var(--ten-color-dark-mode);
+  }
+}
+
+.portifolio-box .portifolio-box-content {
+  margin-right: 30px;
+}
+
+.portifolio-box-content p {
   text-align: justify;
 }
 
-.portifolio-box .portifolio-image img {
+.portifolio-box .portifolio-box-image img {
   width: 100%;
-  align-self: flex-end;
-  border-radius: 15px;
 }
 
-.portifolio-box .portifolio-technologies {
-  display: grid;
-  grid-column: auto;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+.portifolio-box .portifolio-box-technologies {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.portifolio-box-technologies img {
+  width: 60px;
+  max-width: 60px;
+  opacity: 50%;
+}
+
+.portifolio-box-technologies .flutter {
+  content: url("/imgs/svgs/flutter/flutter_light.svg");
+
+  .dark-mode & {
+    content: url("/imgs/svgs/flutter/flutter_dark.svg");
+  }
+}
+
+.portifolio-box-technologies .csharp {
+  content: url("/imgs/svgs/csharp/csharp_light.svg");
+
+  .dark-mode & {
+    content: url("/imgs/svgs/csharp/csharp_dark.svg");
+  }
+}
+
+.portifolio-box-technologies .postgresql {
+  content: url("/imgs/svgs/postgresql/postgresql_light.svg");
+
+  .dark-mode & {
+    content: url("/imgs/svgs/postgresql/postgresql_dark.svg");
+  }
+}
+
+.portifolio-box-visit-project {
+  display: flex;
+  justify-content: center;
+}
+
+.portifolio-box-visit-project .btn-box {
+  height: 50px;
 }
