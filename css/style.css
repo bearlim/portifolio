@@ -382,24 +382,24 @@ input:checked + .slider:before {
 }
 
 .portifolio-box-technologies .flutter {
-  content: url("/imgs/svgs/flutter/flutter_light.svg");
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/flutter/flutter_light.svg");
 }
 .dark-mode .portifolio-box-technologies .flutter {
-  content: url("/imgs/svgs/flutter/flutter_dark.svg");
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/flutter/flutter_dark.svg");
 }
 
 .portifolio-box-technologies .csharp {
-  content: url("/imgs/svgs/csharp/csharp_light.svg");
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/csharp/csharp_light.svg");
 }
 .dark-mode .portifolio-box-technologies .csharp {
-  content: url("/imgs/svgs/csharp/csharp_dark.svg");
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/csharp/csharp_dark.svg");
 }
 
 .portifolio-box-technologies .postgresql {
-  content: url("/imgs/svgs/postgresql/postgresql_light.svg");
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/postgresql/postgresql_light.svg");
 }
 .dark-mode .portifolio-box-technologies .postgresql {
-  content: url("/imgs/svgs/postgresql/postgresql_dark.svg");
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/postgresql/postgresql_dark.svg");
 }
 
 .portifolio-box-visit-project {
