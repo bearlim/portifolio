@@ -402,6 +402,41 @@ input:checked + .slider:before {
   content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/postgresql/postgresql_dark.svg");
 }
 
+.portifolio-box-technologies .react {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/react/react_light.svg");
+}
+.dark-mode .portifolio-box-technologies .react {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/react/react_dark.svg");
+}
+
+.portifolio-box-technologies .firebase {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/firebase/firebase_light.svg");
+}
+.dark-mode .portifolio-box-technologies .firebase {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/firebase/firebase_dark.svg");
+}
+
+.portifolio-box-technologies .python {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/python/python_light.svg");
+}
+.dark-mode .portifolio-box-technologies .python {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/python/python_dark.svg");
+}
+
+.portifolio-box-technologies .django {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/django/django_light.svg");
+}
+.dark-mode .portifolio-box-technologies .django {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/django/django_dark.svg");
+}
+
+.portifolio-box-technologies .sqlite {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/sqlite/sqlite_light.svg");
+}
+.dark-mode .portifolio-box-technologies .sqlite {
+  content: url("https://raw.githubusercontent.com/bearlim/portifolio/main/imgs/svgs/sqlite/sqlite_dark.svg");
+}
+
 .portifolio-box-visit-project {
   display: flex;
   justify-content: center;
